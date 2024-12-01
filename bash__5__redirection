@@ -1,0 +1,61 @@
+redirection unput/ output
+
+
+
+cat         :== union file
+sort        :== sort string of text
+uniq        :== reports duplicats lines or remove them
+    -d      :== 
+grep        :== find and output string, template matching
+    -i      :==требует от grep игнорировать регистр символов в процессе поиска (обычно
+            поиск выполняется с учетом регистра символов);
+    -v      :== ребует от grep выводить только строки, где совпадение с шаблоном не найдено.
+wc          :==output num symols string
+    -l      :== num string
+head        :== output first string from file
+    -n      :==      
+tail        :== output end string from file
+    -n      :==
+    -f      :==continue output procces
+tee         :== read data       page 100
+
+
+standard input       :== (stdin)    0
+standard output      :== (stdout)   1
+standard error, stderr              2 :== сообщения о состоянии — 
+                                        в специальный файл стандартный вывод ошибок 
+
+ > ls-outpu.txt
+ ls -l /usr >> ls-output.txt
+
+
+Чтобы перенаправить стандартный вывод ошибок, нужно
+указать его дескриптор файла
+
+ls -l /bin/usr 2>ls-error.txt
+
+error + stdout
+    I)ls -l /bin/usr > ls-output.txt 2>&1
+    II) ls -l bin/usr &>> ls-output.txt
+
+bit bucket      page 92
+
+
+conveirs |      :== pages 95
+
+
+Filter
+Конвейеры часто используются для выполнения сложных операций с данными.
+Они позволяют объединить вместе несколько команд. Часто команды, используе-
+мые таким способом, называют фильтрами.
+
+ls 
+
+разница между оператором конвейера | и опе-
+ратором перенаправления >. Выражаясь простым языком, оператор перенаправ-
+ления связывает команду с файлом, а оператор конвейера связывает вывод одной
+команды с вводом другой.
+
+команда1 > файл1        !Помните, что оператор перенаправления без лишних предупреждений создает или
+                         затирает файлы, поэтому относитесь к нему с особым вниманием.
+команда1 | команда2     конвейр

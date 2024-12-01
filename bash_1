@@ -1,0 +1,44 @@
+командная строка ~командная оболочка(shell)
+
+shell - программа которая принимает команды введённые с клавиатуры и передаёт их операционной сестиме системе
+
+shell prompt(приглашение к вводу)
+user@linuxbox
+
+ls -l   || ls -lt --reverse :== parametrs and args
+
+date  :==output current date  
+df    :==volume of free space
+free  :==volume of free memory
+
+exit  :==exit from terminal
+
+pwd   :== output work dir
+cd    :== move to direction
+ls    :== lists the contents of a directory
+    -l  :==moreinfo file(long)
+    -t  :==sort result to the time
+    -a  --all :==output all files, including systemfile
+    -A  --almost-all  :== seems like -a, 
+                        but no view work catalog and no parents catalog 
+    -d  --directory   :==info catalog, use ls -ld
+    -F  --classify    :== 
+    -h  --human-readable :== size of the file
+    -r  --reverse     :== output reverse result
+    -S  :== sort result to size
+    -t  :== sort result to time
+file  :== defines type of file
+less  :==outputs the contents of a file     \\page 53
+    intercommand:
+        PageUp     b
+        PageDown  [space]
+        G  
+        g
+        /symbols
+        n                       find
+        h
+        q
+reset  :== 
+
+
+

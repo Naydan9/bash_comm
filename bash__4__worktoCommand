@@ -1,0 +1,33 @@
+type        :== type of command
+
+which       :== defined locatioin execution file
+help        :==
+man         :==
+apropos     :==
+info        :==alter manual
+        u
+        n
+        p
+
+whatis      :== output short description command
+alias       :==[
+        alias fpp= 'cd /usr;ls; cd -'
+
+]
+
+
+type of command:
+    Execution program
+    built-in command
+    shell functions
+    alias
+ 
+organization of the reference section/partition(man) 
+1   Пользовательские команды
+2   Программные интерфейсы системных вызовов в ядре
+3   Программные интерфейсы в библиотеке C
+4   Специальные файлы, такие как узлы устройств и драйверы
+5   Форматы файлов
+6   Игры и развлечения, такие как хранители экрана
+7   Прочее
+8   Команды системного администрирования

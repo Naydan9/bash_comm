@@ -1,0 +1,40 @@
+cp      :== copy file and catalog
+    -a  --archive       :== copy file and catalog with all attribute.
+                         include ident owner and acces rights 
+    -i  --interactive   :==запрашивать у пользователя подтверждение перед перезаписью
+                        существующего файла
+    -r  --recursive     :==
+    -u  --update        :== copy only missing file
+    -v  --verbose       ;==output info message in proccess copy
+
+mv      :==move/rename file and catalog
+    -i  --interactive   :== 
+    -u  --ipdate        :==
+    -v  --verbose       :==
+
+mkdir   :==make catalog
+
+rm      :==remove file and catalog
+    -i  --interactive   :==
+    -r  --recursive     :==
+    -f  --force         :==     ignore missing file and no request acces
+    -v  --verbose       :==
+ln      :==create hard and symbol link(references) page 71
+    (ls -li)    :==index node
+    -s      :==symbol link        page 72
+ 
+
+
+wildcad(групповые символы) || globbing(символы подстановки)     pages 60
+        *               :== any sequence symbols
+        ?               :== any 1 symbol
+        [symbol]        :== any sequence 1 symbols from shown multi list
+        [!symbol]       :== any sequence 1 symbols from NO shown multi
+        [[:class:]]     :== any 1 symbol, sets shown classes
+
+class symbol    page 61
+[:alnum:]       
+[:alpha:]       any alphabetical symbol
+[:digit]        any numeric character
+[:lower:]
+[:uper:]        
